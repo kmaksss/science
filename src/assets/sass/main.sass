@@ -1,0 +1,1847 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+@import 'aos'
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+body
+  color: #290302
+  background: #fff
+  font-size: 18px
+  line-height: 22px
+  font-family: 'Gilroy', sans-serif
+  font-style: normal
+  font-weight: normal
+  transition: .1s
+  letter-spacing: 0.05em
+.mob-visible
+    display: none
+.text-icon
+  padding-left: 40px
+  position: relative
+  &__icon
+    position: absolute
+    top: 0.2rem
+    left: 0
+.comfortaa
+  font-family: 'Comfortaa', cursive;
+
+.nowrap
+  white-space: nowrap
+.wrap
+  margin: 0 auto
+  height: 100%
+  overflow-y: hidden
+  overflow-x: hidden
+
+.f144
+  font-size: 144px
+  line-height: 178px
+.f72
+  font-size: 72px
+  line-height: 64%
+.f64
+  font-size: 64px
+  line-height: 70px
+.f36
+  font-size: 36px
+  line-height: 43px
+.f30
+  font-size: 30px
+  line-height: 37px
+.f24
+  font-size: 24px
+  line-height: 30px
+.f22
+  font-size: 18px
+  line-height: 22px
+.f18
+  font-size: 18px
+  line-height: 22px
+.f14
+  font-size: 14px
+  line-height: 17px
+.f12
+  font-size: 12px
+  line-height: 14px
+
+.lh43
+  line-height: 43px
+.lh30
+  line-height: 30px
+.lh20
+  line-height: 20px
+
+.blue
+  background: #017BFF
+  color: #fff
+  a
+    color: #fff
+.white
+  background: #fff
+.shadow
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+.shadow-2
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1)
+.radius30
+  border-radius: 30px
+.radius20
+  border-radius: 20px
+.radius10
+  border-radius: 10px 
+.text-blue
+  color: #017BFF
+.text-grey
+  color: #C4C4C4
+.text-grey-2
+  color: #9C9C9C
+.text-white
+  color: #fff
+.circle
+  border-radius: 50%
+.hidden
+  overflow: hidden
+
+.dashed
+  // border: 1.5px dashed #525252
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect rx='30' width='100%' height='100%' style='fill: none; stroke: grey; stroke-width: 1; align: inside; corner-radius: 30; stroke-dasharray: 30 30'/></svg>")
+.mb-30
+  margin-bottom: 30px
+.letter5
+  letter-spacing: 0.05em
+.letter0
+  letter-spacing: 0
+.under
+  text-decoration: underline
+
+h2
+  font-size: 38px
+  line-height: 1.6em
+
+h3
+  font-size: 25px
+
+h4
+  font-size: 16px
+
+a 
+  color: inherit
+  text-decoration: none
+  transition: .2s
+  &:hover
+    color: #000
+  &:active
+    color: #000
+
+ul
+  list-style: none
+
+.d-block
+  display: block
+.d-inblock
+  display: inline-block
+.lefter
+  float: left
+.bolder
+  font-weight: 700
+.w400
+	font-weight: 400
+.w300
+	font-weight: 300
+.w100
+	width: 100%
+
+.upper
+  text-transform: uppercase
+.relative
+  position: relative
+.absolute
+  position: absolute
+  &--full
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+.container
+  margin: 0 auto
+  width: 1310px
+  padding: 0 10px
+  
+.cols-4
+  width: 25%
+.cols-3
+  width: 33%
+.cols-2
+  width: 50%
+.center-x-y
+  display: flex
+  -webkit-display: flex
+  justify-content: center
+  -webkit-justify-content: center
+  align-items: center
+  -webkit-align-items: center
+.d-flex
+  display: flex
+  -webkit-display: flex
+  flex-wrap: wrap
+  -webkit-flex-wrap: wrap
+.justify-space
+  justify-content: space-between
+.align-center
+  align-items: center
+
+.m-left
+  margin-left: auto
+.m-right
+  margin-right: auto
+.m-auto
+  margin: 0 auto
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+
+.btn
+  background-image: linear-gradient(to bottom, #01C6FF, #017BFF);
+  border-radius: 38.5px
+  width: 300px
+  height: 75px
+  background-size: 100% 130%
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  color: #ffffff
+  border: none
+  outline: none
+  box-shadow: 0px 10px 20px rgba(1, 123, 255, 0.4)
+  border-bottom: 3px solid #006CD9
+  text-shadow: 0px 0px 3px #017BFF
+  text-align: center
+  cursor: pointer
+  transition: all .4s ease-in-out
+  &:hover
+    color: #fff
+    background-position: 0 100%
+    box-shadow: 0 4px 8px 0 rgba(65, 132, 234, 0.75)
+  &--loupe
+    padding-left: 30px
+    &__icon
+      margin-right: -10px
+
+.circle-btn
+  width: 158px
+  height: 158px
+  border: 1px solid #FFFFFF
+  background: transparent
+  cursor: pointer
+  position: relative
+  z-index: 2
+  transition: .4s
+  &__wrap
+    width: 70%
+    height: 70%
+    background: #fff
+    padding: 3%
+    position: relative
+    z-index: -1
+  &__body
+    border: 1px solid #F5F5F5
+    width: 100%
+    height: 100%
+  &__text 
+    background: rgba(255, 255, 255, 0.97)
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1), 0px 0px 10px #FFFFFF;
+    border-radius: 10px;
+    margin-left: -50px
+    padding: 14px 23px 13px 54px
+    max-width: 276px
+    width: 100%
+.circle-btn-button
+  &:hover
+    .circle-btn
+      transform: scale(1.25)
+      border-color: transparent
+
+.main
+  background: url(../img/main-bg.jpg) no-repeat top center
+  background-size: cover
+  position: relative
+.header
+  padding-top: 20px
+  padding-bottom: 20px
+  .logo
+    max-width: 80px
+    img
+      width: 100%
+  &__contacts-social
+    position: relative
+    top: -6px
+    margin-left: 36px
+  &__contacts
+    padding-left: 48px
+
+.m-menu
+  width: calc(100% - 183px)
+.main-menu-wrap
+  width: calc( 100% - 513px)
+  a
+    padding: 10px 0
+    &:hover
+      color: #017BFF
+
+.bg-shadow
+  height: 801px
+  width: 100%
+  background: linear-gradient(360deg, #FFFFFF 82.5%, rgba(255, 255, 255, 0) 100%)
+  position: absolute
+  bottom: -620px
+  left: 0
+  right: 0
+  z-index: 3
+.phone-icon
+  position: relative
+  &__icon
+    position: absolute
+    left: -48px
+    top: 5px
+
+.main-content
+  &__l
+    width: 679px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+    z-index: 3
+    padding-top: 10px
+    padding-bottom: 180px
+  &__r
+    width: calc(100% - 679px)
+  &__r-wrap
+    margin-left: -60px
+    position: relative
+  &__title
+    margin-bottom: 20px
+  &__three
+    position: absolute
+    bottom: -560px
+    
+  &__child
+    position: relative
+    z-index: 1
+    margin: 0 auto
+    width: 100%
+    max-width: 638px
+  &__buterfly
+    z-index: 2
+    right: -30px
+    top: 50%
+    margin-top: -130px
+  &__buterfly-sm
+    z-index: 2
+    left: 60px
+    top: 50%
+    margin-top: -170px
+  &__r-btn
+    position:   absolute
+    z-index: 3
+    top: 50%
+    margin-top: 70px
+    margin-left: 20px
+
+  &__btn
+    margin-right: 47px
+  &__promo
+    margin-bottom: 33px
+  &__promo-img
+    margin-left: -35px
+  &__promo-text
+    padding-top: 20px
+.people-offers
+  &__count
+    width: 36px
+    height: 36px
+    margin-right: 10px
+
+
+.top-banner
+  position: relative
+  z-index: 3
+  padding-top: 90px
+  padding-bottom: 165px
+  &__banner
+    padding: 46px 165px 73px 153px
+  &__body-l
+    font-size: 250px
+    line-height: .8
+    font-weight: 900
+    background: url(../img/text-mask.jpg) no-repeat left center 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 714px
+    width: 687px
+    z-index: 2
+  &__body-r
+    width: calc(100% - 687px)
+    padding-top: 15px
+    padding-bottom: 5px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__blue-cover
+    margin-top: -100px
+    position: relative
+    top: -55px 
+  &__pen
+    left: -60px
+    top: -50px
+  &__juke
+    bottom: -140px
+    left: 25%
+  &__scope
+    right: -35px
+    bottom: -175px
+  
+.blue-cover
+  display: inline-block
+  padding: 16px 43px 12px
+
+
+.banner-1
+  background: url(../img/banner-1-bg.jpg) top center no-repeat 
+  background-size: cover
+  &__clouds
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    img
+      width: 100%
+      max-height: 300px
+  &__cloud-2
+    bottom: 0
+  .container
+    position: relative
+    z-index: 1
+    padding-top: 200px
+    padding-bottom: 200px
+  &__body
+    max-width: 520px
+    width: 100%
+    
+  &__title
+    margin-bottom: 20px
+  &__descr
+    margin-bottom: 42px
+  &__buterfly
+    left: 100%
+    top: 108px
+  &__buterfly-sm
+    right: -220px
+    top: 0
+
+  &__items
+    margin-bottom: 53px
+  &__item
+    padding: 14px 19px 15px
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1), 0px 0px 10px #FFFFFF
+    background: #fff
+    margin-right: 30px
+    &--first
+      width: 190px
+    &--second
+      width: 245px
+
+.section-heading
+  margin-bottom: 70px
+  max-width: 816px
+  margin-left: auto
+  margin-right: auto
+  &__descr
+    margin-top: 20px
+  &--left
+    margin-left: 0
+    max-width: 1000px
+.courses
+  position: relative
+  padding-bottom: 63px
+  &__items
+  &__item
+    padding: 45px 45px 43px
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px
+    width: calc(33.33% - 20px)
+    margin-bottom: 30px
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    margin-right: 30px
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+      display: flex
+    
+  &__items-load-more
+    .courses__item
+      display: flex
+  &__item-img
+    background: #C4C4C4
+    border-radius: 15px
+    margin-bottom: 30px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      display: block
+  &__item-title
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+  &__item-descr
+    margin-bottom: 35px
+  &__item-icon
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 58px
+    height: 38px
+    margin-right: 20px
+  &__item-time-top
+    padding-top: 8px
+  &__item-time-body
+    height: 55px
+    margin-bottom: 13px
+  &__item-price
+    margin-bottom: 45px
+    min-height: 64px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    table
+      width: 100%
+      td:nth-child(even)
+        font-weight: 700
+        text-align: right
+  .btn
+    margin-left: auto
+    margin-right: auto
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+
+  &__item-top
+    position: relative
+  &__item-age
+    width: 36px
+    height: 36px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: -18px
+    right: -18px
+  &__item-category
+    text-transform: uppercase
+    line-height: 30px
+    wont-weight: bold
+    border-radius: 10px
+    padding: 4px 25px
+  &__more
+    width: calc(33.33% - 20px)
+    margin-right: 30px
+    min-height: 204px
+    cursor: pointer
+    padding-top: 10px
+  &__more-dots
+    justify-content: center
+    div
+      border-radius: 50%
+      width: 8px
+      height: 8px
+      background: #ffffff
+      margin: 0 8px 16px
+  &__footer-banner
+    width: calc(66.66% - 20px)
+    padding: 40px 55px
+  &__footer-banner-title
+    margin-bottom: 20px
+    max-width: 586px
+  &__footer-banner-descr
+    max-width: 440px
+  &__three
+    bottom: -130px
+    right: -350px
+    width: 554px
+    z-index: 2
+
+  &__leave
+    position: absolute
+    &-1
+      top: 530px
+      left: -40px
+      z-index: 1
+      width: 76px
+      transform: rotate(20deg)
+    &-2
+      top: 586px
+      left: -80px
+      z-index: 1
+    &-3
+      top: 766px
+      left: -80px
+      z-index: -1
+    &-4
+      top: 1006px
+      right: -40px
+      z-index: 1
+      transform: rotate(30deg)
+      width: 90px
+    &-5
+      top: 1250px
+      right: -120px
+      z-index: -1
+
+    &-6
+      top: 1916px
+      left: 33.33%
+      margin-left: -30px
+      z-index: 1
+      transform: rotate(10deg)
+      width: 90px
+    &-7
+      top: 1960px
+      left: 33.33%
+      margin-left: -100px
+    &-8
+      top: 2590px
+      left: -40px
+      z-index: 1
+      width: 90px
+      transform: rotate(10deg)
+    &-9
+      top: 2460px
+      left: 66.66%
+      margin-left: -50px
+      z-index: -1
+    &-6,
+    &-7,
+    &-8,
+    &-9
+      display: none!important
+
+  &__items-load-more
+    .courses__leave-6,
+    .courses__leave-7,
+    .courses__leave-8,
+    .courses__leave-9
+      display: block!important
+.banner-2
+  position: relative
+  padding-top: 137px
+  padding-bottom: 210px
+  overflow: hidden
+  min-height: 500px
+  background: url(../img/map.jpg) no-repeat center
+  background-size: 1920px
+ 
+  &__bottom-img
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    margin-left: -50px
+    
+  &__bottom-img-circle
+    width: 638px
+    height: 638px
+    border: 89px solid #C7D909
+    margin-bottom: -200px
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    z-index: -1
+    top: 100px
+  &__bottom-bg
+    background: url(../img/pngwing5.png) center bottom repeat-x
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 2
+    height: 445px
+    background-size: 1920px
+  &__l
+    width: 707px
+  &__r
+    width: calc(100% - 707px)
+    img
+      position: relative
+      left: -70px
+  &__title
+    margin-bottom: 20px
+  &__descr
+    margin-bottom: 80px
+  &__item
+    padding: 40px 80px 40px 55px
+    width: calc(50% - 15px)
+    position: relative
+    overflow: hidden
+    &>*
+      position: relative
+      z-index: 1
+    &::after   
+      content: ''
+      display: block
+      position: absolute
+      top: 2px
+      left: 2px
+      right: 2px
+      bottom: 2px
+      background-color: #fff
+      border-radius: 30px
+  &__item-title
+    margin-bottom: 20px
+  &__item-text
+    letter-spacing: 0
+    &--left
+      max-width: 440px
+
+.sertificates
+  padding: 100px 0 93px
+  background: #EFEFEF
+ 
+  &__items
+    margin-bottom: 30px
+  &__item
+    height: 290px
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1))
+    margin-bottom: 20px
+    img
+      height: 100%
+  &__more-btn
+    text-align: center
+    padding: 13px 11px
+    width: 100%
+    max-width: 327px
+    &:hover
+      color: #fff
+
+.banner-3
+  padding: 106px 0 176px
+  &__wrap
+    padding: 56px 20px 84px
+    position: relative
+  &__item-1
+    top: 29px
+    left: -75px
+  &__item-2
+    bottom: -49px
+    right: -60px
+  &__item-3
+    width: 80px
+    bottom: -43px
+    left: 15%
+  &__item-4
+    bottom: -180px
+    left: 15%
+
+
+.specialists
+  padding-bottom: 116px
+  &__heading
+    max-width: 479px
+  &__book
+    top: 0
+    right: 50px
+  &__item
+    padding: 40px 35px 54px
+    width: calc(25% - 22.5px)
+    background: #FFFFFF
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+    margin-bottom: 30px
+    img
+      max-width: 100%
+    &--type-2
+      padding: 0
+      width: 100%
+      display: flex
+      .specialists__item-img
+        width: 520px
+        height: auto
+        margin: 0
+      .specialists__item-body
+        width: calc(100% - 520px)
+        padding: 45px 30px 40px
+      .specialists__item-name
+        margin-bottom: 14px
+      .specialists__item-cat
+        margin-bottom: 35px
+  &__item-img
+    width: 151px
+    height: 151px
+    margin: 0 auto 40px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__item-name
+    margin-bottom: 25px
+    letter-spacing: 0
+  &__item-cat
+    padding: 8px 17px
+    margin-bottom: 14px
+
+.form
+  width: 100%
+  max-width: 410px
+  margin-left: auto
+  margin-right: auto
+  background: #FFFFFF
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1)
+  padding: 50px 30px 30px
+  position: relative
+  z-index: 2
+
+  &__container
+    max-width: 300px
+    margin-left: auto
+    margin-right: auto
+
+  &__close-btn
+    width: 28px
+    height: 28px
+    position: absolute
+    top: 28px
+    right: 28px
+    cursor: pointer
+  &__title
+    margin-bottom: 39px
+  &__privacy
+    margin-top: 20px
+  &__btn
+    margin-top: 20px
+
+input
+  border: none
+  outline: none
+  border-bottom: 1px solid #017BFF
+  border-left: 12px solid #017BFF
+  margin-bottom: 25px
+  width: 100%
+  padding: 2px 10px 10px 42px
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  &::placeholder
+    color: #d4d4d4
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+.banner-4
+  padding: 194px 0 80px
+  background: url(../img/banner-4.jpg) center no-repeat
+  background-size: cover
+  &__clouds
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    img
+      width: 100%
+      max-height: 300px
+  &__cloud-2
+    bottom: 0
+  &__l
+    width: calc(100% - 740px)
+    display: flex
+    justify-content: center
+  &__r
+    width: 740px
+  &__container
+    position: relative
+    z-index: 2
+  &__item
+    background: #FFFFFF
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 30px
+    width: 330px
+    margin-bottom: 10px
+    padding: 30px 24px 23px
+  &__item-icon
+    width: 58px
+    height: 38px
+    margin-right: 12px
+  &__item-title
+    margin-bottom: 10px
+  &__item-body
+    margin-bottom: 8px
+    white-space: nowrap
+  &__item-wrap
+    max-width: 176px
+  &__form
+    margin-left: -110px
+  &__items
+    margin-bottom: 50px
+  &__l
+    margin-bottom: 180px
+
+
+.galery
+  padding-top: 54px
+  padding-bottom: 145px
+  &__item
+    border-radius: 30px
+    height: 286px
+    background: #C4C4C4
+    margin: 0 30px 30px 0
+    overflow: hidden
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+  &__items-bottom
+    .galery__item
+      width: calc(16.66% - 25px)
+      &:nth-child(6n)
+        margin-right: 0
+  &__items-top-l
+    width: 520px
+    margin-right: 30px
+    .galery__item
+      margin-right: 0
+  &__items-top-c
+    width: 300px
+    margin-right: 30px
+    .galery__item
+      margin-right: 0
+      height: calc(100% - 30px)
+  &__items-top-r
+    width: 410px
+    .galery__item
+      width: calc(50% - 15px)
+      &:nth-child(even)
+        margin-right: 0
+
+
+.rewiews
+  padding-bottom: 166px
+  position: relative
+  z-index: 2
+  &__slider
+    margin-left: 110px
+    margin-right: 110px
+    margin-bottom: 50px
+  &__slide
+    opacity: 1
+    transition: .2s
+    img
+      width: 100%
+  .swiper-button-prev
+    outline: none
+    &:after
+      content: url(../img/prev.svg)
+  .swiper-button-next
+    outline: none
+    &:after
+      content: url(../img/next.svg)
+  &__more-btn
+    text-align: center
+    padding: 13px 11px
+    width: 100%
+    max-width: 410px
+    justify-content: center
+    margin:  0 auto
+    svg
+      margin-right: 20px
+    &:hover
+      color: #fff
+  &__loupe
+    top: 50%
+    transform: translateY(-50%)
+    left: 100%
+    margin-top: 50px
+    margin-left: -30px
+    z-index: 2
+
+  &__three
+    position: absolute
+    top: 100%
+    left: -600px
+    margin-top: -350px
+    
+.mfp-close-btn-in .mfp-close
+  display: none
+.banner-5
+  padding: 194px 0 80px
+  background: #EFD87F
+  background-size: cover
+  min-height: 850px
+  &__clouds
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    img
+      width: 100%
+      max-height: 300px
+  &__cloud-2
+    bottom: 0
+    z-index: 2
+  &__container
+    z-index: 3
+  &__center-img
+    margin-top: -200px
+    position: absolute
+    bottom: 50px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 1
+  &__center-circle-wrap
+    width: 756px
+    height: 756px
+    border: 3px solid #FFFFFF
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &__center-circle
+    border: 89px solid rgba(255, 255, 255, 0.2)
+    width: 70%
+    height: 70%
+  &__center-circle-body
+    width: 95%
+    height: 95%
+    border: 3px solid #FFFFFF
+  &__row-sm
+    padding-left: 64px
+    padding-right: 64px
+  &__card
+    background: #FFFFFF
+    border-radius: 20px
+    min-height: 95px
+    width: 100%
+    max-width: 300px
+    padding: 5px 32px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 30px
+  &__btn
+    position: relative
+    top: 50px
+  &__item
+    position: absolute
+    &-1
+      top: 2%
+      left: -5%
+    &-2
+      top: -12%
+      width: 220px
+      left: 22%
+    &-3
+      top: 52%
+      left: -5%
+    &-4
+      top: 6%
+      right: 17%
+    &-5
+      top: 50%
+      right: -4%
+
+.about
+  padding-top: 79px
+  padding-bottom: 147px
+  &__item
+    margin-bottom: 30px
+    position: relative
+    color: #fff
+    &-bg
+      width: 100%
+      height: 100%
+      object-fit: cover
+      display: block
+    &-sm
+      height: 265px
+  &__item-content
+    padding: 35px 0 35px 45px 
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    max-width: 345px
+    width: 100%
+    z-index: 1
+    &--lg
+      max-width: 365px
+  &__item-title
+    margin-bottom: 10px
+  &__item-part
+    position: absolute
+    z-index: 1
+    &-ball
+      top: -80px
+      right: 0
+    &-reptily
+      bottom: -70px
+      left: -170px
+    &-colb
+      bottom: -85px
+      left: 60px
+    &-projector
+      bottom: -150px
+      left: -100px
+.footer
+  padding-top: 100px
+  padding-bottom: 60px
+  &__heading
+    margin-bottom: 79px
+  &__descr
+    margin-top: 20px
+    margin-bottom: 85px
+  &__l
+    width: 412px
+  &__r
+    width: 783px
+  &__phone
+    margin-bottom: 23px
+  &__contacts
+    margin-bottom: 59px
+  &__address
+    width: 100%
+    max-width: 264px
+    margin-right: 35px
+    li
+      margin-bottom: 40px
+
+  &__menu
+    max-width: 180px
+    width: 100%
+    border-left: 1px solid #E5E5E5
+    a
+      display: block
+      padding-left: 30px
+      margin-bottom: 27px
+    li:last-child
+      a
+        margin-bottom: 0
+  &__address-wrap
+    align-items: flex-start
+  &__logo
+    margin-top: 18px
+
+
+
+  // @import "main/responsive"
+
+
+@media (max-width: 1330px)
+  .f144
+    font-size: 124px
+    line-height: 128px
+  .f72
+    font-size: 65px
+    line-height: 64%
+  .f64
+    font-size: 58px
+    line-height: 64px
+  .f36
+    font-size: 34px
+    line-height: 40px
+  .f30
+    font-size: 28px
+    line-height: 35px
+  .f24
+    font-size: 22px
+    line-height: 28px
+  .f22
+    font-size: 18px
+    line-height: 22px
+  .f18
+    font-size: 16px
+    line-height: 20px
+  .f14
+    font-size: 13px
+    line-height: 16px
+  .f12
+    font-size: 11px
+    line-height: 13px
+  .container
+    width: 1024px
+  .m-menu
+    width: calc(100% - 113px)
+  .main-menu-wrap
+    width: calc(100% - 403px)
+  .main-content__three
+    width: 750px
+  .main-content__l 
+    padding-top: 50px
+    padding-bottom: 80px
+    z-index: 4
+  .main-content__r-btn
+    z-index: 4
+  .circle-btn
+    width: 108px
+    height: 108px
+  .main-content__buterfly
+    width: 40%
+  .main-content__buterfly-sm
+    width: 20%
+  .main-content__r-wrap
+    margin-top: 50px
+  .main-content__l
+    width: 640px
+  .top-banner__banner
+    padding: 46px 80px 73px 103px
+  .top-banner__scope
+    width: 20%
+    right: -75px;
+    bottom: -145px
+  .top-banner__body-l
+    font-size: 230px
+    width: 620px
+  .top-banner__body-r
+    width: calc(100% - 620px);
+  .top-banner__body-r-top
+    font-size: 27px
+  .top-banner__juke
+    width: 20%
+    bottom: -100px
+  .top-banner__pen
+    width: 20%
+    top: 30px
+  .top-banner
+    padding-bottom: 100px
+  .about__items-l,
+  .about__items-r
+    width: 100%
+  .about__item-sm
+    height: auto
+  .about
+    padding-bottom: 100px
+    padding-top: 89px
+  .courses__item
+    padding: 25px
+    .btn
+      width: 100%
+  .courses__item-descr
+    font-size: 20px;
+    line-height: 24px;
+  .courses__leave-2
+    left: -130px
+  .courses__leave-6,
+  .courses__leave-7
+    z-index: -1
+  .banner-2
+    padding-top: 100px
+  .banner-2__l
+    width: 650px
+  .banner-2__r
+    img
+      width: 500px
+  .banner-2__descr
+    margin-bottom: 50px
+  .banner-2__bottom-img
+    margin-left: 0
+    bottom: -50px
+    width: 470px
+    img
+      max-width: 100%
+  .banner-2__bottom-img-circle
+    width: 520px
+  .sertificates__item
+    height: 220px
+  .sertificates
+    padding-top: 50px
+    padding-bottom: 50px
+  .banner-3__item-1,
+  .banner-3__item-2,
+    width: 15%
+  .banner-3__item-4
+    display: none
+  .banner-3
+    padding-bottom: 100px
+  .specialists__book
+    width: 20%
+  .specialists__item--type-2 .specialists__item-img
+    width: 485px
+  .specialists__item
+    padding: 15px 15px 30px  
+  .specialists__item--type-2
+    padding: 0
+  .specialists__item-name
+    min-height: 48px
+  .specialists
+    padding-bottom: 60px
+  .banner-4__clouds img
+    width: 1300px 
+  .banner-4__l
+    .circle-btn-button  
+      display: none
+  .galery__items-top-r
+    width: 100%
+  .galery__items-top-l,
+  .galery__items-top-c
+    width: calc(50% - 15px)
+  .galery__items-top-c
+    margin-right: 0
+  .galery__items-top-c .galery__item
+    height: 600px
+  .galery
+    padding-bottom:  100px
+  .rewiews__three
+    width: 80%
+  .rewiews__loupe
+    width: 100%
+    margin-top: 30px
+  .rewiews
+    padding-bottom: 100px
+  .banner-5
+    margin-top: -50px
+  .banner-5__item
+    display: none
+
+  .footer
+    padding-top: 50px
+  .footer__l,
+  .footer__r
+    width: 100%
+    max-width: 750px
+    margin-left: auto
+    margin-right: auto
+  .footer__l
+    margin-bottom: 50px
+  
+
+
+@media (max-width: 1023px)
+  .f144
+    font-size: 100px
+    line-height: 90px
+  .f72
+    font-size: 60px
+    line-height: 54%
+  .f64
+    font-size: 48px
+    line-height: 54px
+  .f36
+    font-size: 30px
+    line-height: 36px
+  .f30
+    font-size: 24px
+    line-height: 31px
+  .f24
+    font-size: 18px
+    line-height: 23px
+  .f22
+    font-size: 16px
+    line-height: 20px
+  .f18
+    font-size: 14px
+    line-height: 18px
+  .f14
+    font-size: 12px
+    line-height: 14px
+  .f12
+    font-size: 11px
+    line-height: 13px
+  .container
+    width: 750px
+
+  .main-menu-wrap
+    display: none
+  
+  .m-menu
+    width: auto
+  .main-content__l 
+    width: 100%
+    max-width: 570px
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+  .main-content__r
+    width: 100%
+    max-width: 400px
+    margin-left: auto
+    margin-right: auto
+    order: -1
+  .main-content__container
+    flex-direction: column
+    margin-top: -30px
+  .bg-shadow
+    bottom: auto
+    top: 250px
+    height: 600px
+  .main-content__three
+    width: 350px
+    bottom: -150px
+    
+  .main
+    background: #fff
+  .header
+    position: relative
+    z-index: 5
+  .main-content__child
+    max-width: 250px
+  .main-content__r-wrap
+    margin-top: 0
+    width: 100%
+  .main-content__promo
+    justify-content: center
+  .people-offers__text,
+  .main-content__promo-text
+    text-align: left
+  .top-banner
+    padding-top: 60px
+  .top-banner__banner
+    padding: 30px
+  .top-banner__blue-cover
+    margin-top: 0
+    top: 0
+  .top-banner__body-l
+    font-size: 200px
+    width: 520px;
+  .top-banner__body-r
+    width: calc(100% - 520px)
+  .top-banner__body-r-top
+    font-size: 20px
+    line-height: 1.2
+  .top-banner__body-r-bottom
+    font-size: 40px
+  .top-banner__scope
+    bottom: -100px
+  .banner-1__body
+    max-width: 500px
+  .banner-1
+    background-position-x: right
+    .container
+      padding-top: 150px;
+      padding-bottom: 150px
+  .banner-1__clouds
+    img
+      width: 1200px
+  .section-heading__descr
+    margin-top: 5px
+  .section-heading
+    margin-bottom: 50px
+  .courses__item
+    width: calc(50% - 15px)
+    
+    &:nth-child(3n)
+      margin-right: 30px
+    &:nth-child(2n)
+      margin-right: 0
+  .courses__three
+    width: 400px
+  .banner-2__r
+    display: none
+  .banner-2
+    padding-top: 50px
+  .banner-2__item
+    padding: 30px
+  .sertificates__item
+    height: 160px
+
+  .banner-3__title,
+  .banner-3__descr
+    line-height: 1
+
+  .banner-3__title
+    font-size: 80px
+  .banner-3__descr
+    font-size: 40px
+  .banner-3__wrap
+    padding: 40px
+  
+  .specialists__item
+    width: calc(50% - 15px)
+
+  .specialists__item--type-2 .specialists__item-img,
+  .specialists__item--type-2 .specialists__item-body
+    width: calc(50% - 15px)
+
+  .specialists__item--type-2
+    width: 100%
+  .specialists__item-name
+    min-height: auto
+  .banner-4
+    padding-top: 0
+    background-position-x: left
+
+  .banner-5__center-circle-wrap
+    width: 400px
+    height: 400px
+  .banner-5__center-img
+    img
+      max-width: 500px
+  .banner-5__card
+    max-width: 200px
+    font-size: 12px
+    line-height: 1.2
+    min-height: 70px
+  .banner-5
+    min-height: 750px
+
+
+
+
+@media (max-width: 767px)
+  .container
+    padding-left: 5px
+    padding-right: 5px
+  body
+    letter-spacing: 0
+    font-size: 14px
+    line-height: 1.2
+  .f144
+    font-size: 80px
+    line-height: 90px
+  .f72
+    font-size: 50px
+    line-height: 54%
+  .f64
+    font-size: 40px
+    line-height: 46px
+  .f36
+    font-size: 25px
+    line-height: 30px
+  .f30
+    font-size: 20px
+    line-height: 28px
+  .f24
+    font-size: 16px
+    line-height: 22px
+  .f22
+    font-size: 15px
+    line-height: 18px
+  .f18
+    font-size: 12px
+    line-height: 15px
+  .f14
+    font-size: 12px
+    line-height: 14px
+  .f12
+    font-size: 11px
+    line-height: 13px
+  .container
+    width: 100%
+
+  .header .logo
+    max-width: 60px
+  .header__contacts-social
+    margin-left: 10px
+    top: 0
+    img
+      width: 30px
+  .phone-icon__icon
+    display: none
+  .header__contacts
+    padding-left: 0
+  .main-content__r-wrap
+    margin-left: 0
+  .main-content__child
+    max-width: 150px
+  .main-content__three
+    width: 180px
+    bottom: -80px
+  .bg-shadow
+    top: 180px
+    height: 400px
+
+  .circle-btn__text
+    display: none
+  .main-content__r-btn
+    margin: 0
+  .circle-btn
+    width: 80px 
+    height: 80px
+  .phone-icon
+    line-height: 1
+  .main-content__buterfly
+    width: 20%
+    margin-top: 0
+    right: 30px
+  .main-content__buterfly-sm
+    width: 15%
+    margin-top: -30px
+  .main-content__title
+    font-size: 25px
+    line-height: 1.2
+    margin-bottom: 10px
+  .main-content__l
+    padding-top: 10px
+    padding-bottom: 10px
+  .main-content__subtitle
+    font-size: 15px
+    line-height: 1.2
+  .main-content__promo-img
+    img
+      width: 80px
+  .main-content__promo-text
+    padding-top: 10px
+  .main-content__promo
+    margin-bottom: 10px
+  .main-content__btn
+    margin-right: 0
+    margin-bottom: 10px
+  .main-content__btn-row
+    flex-direction: column
+  .btn
+    width: 280px
+    height: 65px
+  .btn--loupe__icon
+    width: 90px
+  .top-banner__banner
+    padding: 20px
+  .top-banner__body-l
+    font-size: 105px
+    max-width: 280px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+  .top-banner__body-r
+    max-width: 280px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    padding-top: 0
+  
+  .top-banner__blue-cover
+    margin-left: auto
+    margin-right: auto
+    display: block
+    width: max-content
+  .mob-visible
+    display: block
+  .mob-hide
+    display: none
+  .top-banner
+    text-align: center
+  .top-banner__juke
+    bottom: -50px
+    left: 50%
+    transform: translateX(-50%)
+  .top-banner__scope
+    right: 0
+    bottom: -50px
+  .top-banner__pen
+    left: 0
+    bottom: -60px
+    top: auto
+  .top-banner__body
+    flex-direction: column
+  .top-banner__body-r-top
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .about
+    padding-top: 20px
+    padding-bottom: 50px
+
+  .section-heading__title,
+  .banner-2__title,
+  .footer__heading,
+    font-size: 35px
+    line-height: 1.2
+  .section-heading__descr,
+  .banner-2__descr
+    font-size: 18px
+    line-height: 1.2
+  .about__item-part
+    max-width: 100px
+  .about__item-part-ball
+    top: -60px
+  .about__item-part-reptily
+    left: -50px
+    bottom: -30px
+    max-width: 150px
+  .about__item-content
+    padding: 20px
+    max-width: 200px
+  .about__item-sm
+  .about__item-descr
+    font-size: 13px
+    line-height: 1.2
+  .about__item-part-colb
+    bottom: -45px
+    left: 0
+  .about__item-part-projector
+    bottom: -55px
+    left: 0
+  .banner-1__title
+    font-size: 25px
+    line-height: 1.2
+  .banner-1__descr
+    font-size: 18px
+    line-height: 1.2
+  .banner-1__item--first
+    margin-right: 0
+    max-width: 280px
+    width: 100%
+    margin-bottom: 10px
+  .banner-1__item--second
+    margin-right: 0
+    max-width: 280px
+    width: 100%
+  .banner-1
+    background-position-x: 90%
+  .courses
+    margin-top: -50px
+    padding-bottom: 20px
+
+  .courses__item,
+  .courses__item:nth-child(3n)
+    margin-right: 0
+  .courses__item
+    width: 100%
+  .courses__footer
+    flex-direction: column
+  .courses__more
+    width: 100%
+    margin-bottom: 30px
+  .courses__footer-banner
+    width: 100%
+    padding: 20px
+  .banner-2__item
+    width: 100%
+    margin-bottom: 30px
+  .banner-2__bottom-img
+    max-width: 280px
+  .banner-2
+    padding-bottom: 100px
+  .sertificates__items
+    flex-direction: column
+    align-items: center
+  .sertificates__item
+    max-width: 225px
+    height: auto
+    img
+      width: 100%
+      height: auto
+  .banner-3__wrap
+    padding: 20px
+  .banner-3__title
+    line-height: 0.8
+    font-size: 60px
+    margin-bottom: 10px
+  .banner-3__descr
+    font-size: 30px
+    line-height: 1
+  .banner-3__item-2
+    right: 0
+    bottom: -20px
+    width: 64px
+  .banner-3__item-1
+    left: 0
+    width: 60px
+  .banner-3
+    padding: 50px 0
+  .specialists__item--type-2
+    flex-direction: column
+    .specialists__item-img,
+    .specialists__item-body
+      width: 100%
+    .specialists__item-body
+      padding: 20px
+    .specialists__item-cat
+      margin-bottom: 15px
+      
+  .specialists__book
+    display: none
+  
+  .specialists__item
+    width: 100%
+  .specialists
+    padding-bottom: 20px
+  .banner-4__r
+    width: 100%
+    align-items: center
+    flex-direction: column
+  .banner-4__items
+    margin-bottom: 20px
+  .banner-4__item
+    padding: 15px 25px
+    min-height: 87px
+    max-width: 250px
+    width: 100%
+  .banner-4__item-wrap
+    max-width: none
+  .banner-4__form
+    margin-left: 0
+  .form
+    max-width: 370px
+    padding: 50px 20px 30px
+  .form__btn
+    max-width: 300px
+    width: 100%
+  .banner-4__form
+    margin-left: auto
+    margin-right: auto
+  .form__close-btn
+    top: 20px
+    right: 20px
+  .banner-4
+    padding-top: 160px
+    background-size: 1900px
+    padding-bottom: 40px
+  input
+    font-size: 14px
+    &:placeholder
+      font-size: 14px
+
+  .galery__items-top-c, .galery__items-top-l
+    width: 100%
+  .galery__items-top-l
+    margin-right: 0
+  .rewiews__slider
+    margin-left: 0
+    margin-right: 0
+  .swiper-button-prev,
+  .swiper-button-next
+    display: none
+  .rewiews__loupe
+    width: 150px
+    margin-top: 10px
+    margin-left: -90px
+  .banner-5
+    min-height: 500px
+    padding: 80px 0 50px
+  .banner-5__card
+    margin-bottom: 10px
+    padding: 5px 5
+    font-size: 11px
+    width: calc(50% - 10px)
+  .banner-5__center-img img
+    max-width: 180px
+  .banner-5__center-circle-wrap
+    width: 300px
+    height: 300px
+  .banner-5__row-sm
+    padding: 0
+  .footer__heading,
+  .footer__descr
+    margin-bottom: 30px
+  .footer__address-wrap
+    flex-direction: column
+  .footer__logo
+    display: none
+  .footer__row
+    max-width: 350px
+    margin-left: auto
+    margin-right: auto
